@@ -73,7 +73,7 @@ async def create_db_connections(dp: Dispatcher) -> None:
 
 async def close_db_connections(dp: Dispatcher) -> None:
     if "temp_bot_cloud_session" in dp.workflow_data:
-        temp_bot_cloud_session: AiohttpSession = dp["temp_bot_cloud_session"]
+        temp_bot_cloud_session: AiohttpSession = dp['temp_bot_cloud_session']
         await temp_bot_cloud_session.close()
     if "temp_bot_local_session" in dp.workflow_data:
         temp_bot_local_session: AiohttpSession = dp["temp_bot_local_session"]
