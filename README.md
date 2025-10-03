@@ -1,2 +1,2 @@
 # simple_bot
-on python
+just on python
